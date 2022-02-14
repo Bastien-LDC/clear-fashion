@@ -19,6 +19,7 @@ console.log(MY_FAVORITE_BRANDS[0]);
 
 
 
+
 /**
  * 🌱
  * Let's go with a very very simple first todo
@@ -28,9 +29,10 @@ console.log(MY_FAVORITE_BRANDS[0]);
 
 // 🎯 TODO: The cheapest t-shirt
 // 0. I have 3 favorite brands stored in MY_FAVORITE_BRANDS variable
-// 1. Create a new variable and assign it the link of the cheapest t-shirt
-// I can find on these e-shops
+// 1. Create a new variable and assign it the link of the cheapest t-shirt I can find on these e-shops
+const cheapest_tshirts_url = 0
 // 2. Log the variable
+console.log(`Cheapeast price: ${cheapest_tshirts_url}`)
 
 
 
@@ -47,13 +49,21 @@ console.log(MY_FAVORITE_BRANDS[0]);
 
 // 🎯 TODO: Number of products
 // 1. Create a variable and assign it the number of products
+const nbProducts = marketplace.length
 // 2. Log the variable
-
+console.log(`Number of products in marketplace: ${nbProducts}`)
 
 // 🎯 TODO: Brands name
 // 1. Create a variable and assign it the list of brands name only
+let brands = []
+for (let products of marketplace) {
+    brands.push(products.brand)
+}
 // 2. Log the variable
+console.log(brands)
 // 3. Log how many brands we have
+let nbBrands = new Set(brands).length
+console.log(nbBrands)
 
 
 // 🎯 TODO: Sort by price
