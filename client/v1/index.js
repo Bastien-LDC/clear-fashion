@@ -62,8 +62,8 @@ for (let products of marketplace) {
 // 2. Log the variable
 console.log(brands)
 // 3. Log how many brands we have
-let nbBrands = new Set(brands).length
-console.log(nbBrands)
+let nbBrands = new Set(brands).size
+console.log(`Number of brands: ${nbBrands}`)
 
 
 // 🎯 TODO: Sort by price
